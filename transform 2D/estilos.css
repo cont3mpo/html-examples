@@ -1,0 +1,44 @@
+body {
+  margin: 0;
+  padding: 0;
+  background: #ddd;
+}
+
+.contenedor {
+  display: flex;
+  justify-content: center;
+}
+
+.caja {
+  margin: 150px 15px;
+  width: 150px;
+  height: 150px;
+  background: crimson;
+  color: #fff;
+  font-size: 35px;
+  text-align: center;
+  line-height: 150px;
+  transition: all 2s;
+}
+
+.caja:nth-child(1):hover {
+  background: purple;
+  transform: translate(50px); /* translateX es horizontal, translateY es vertical */
+}
+
+.caja:nth-child(2):hover {
+  background: purple;
+  transform: rotate(50deg); /* rotateX es horizontal, rotateY es vertical */
+}
+
+.caja:nth-child(3):hover {
+  background: purple;
+  transform: scale(2); /* scaleX es horizontal, scaleY es vertical */
+  transform-origin: top; /* transforma desde el punto indicado */
+}
+
+.caja:nth-child(4):hover {
+  background: purple;
+  transform: skew(20deg, 30deg); /* horizontal, vertical - skewX es horizontal, skewY es horizontal */
+  /*  transform: matrix(1, 1, 0, 1, 100, 0); 1era 4ta: scale, 2da 3ra: skew, 5ta 6ta: translate */
+}
