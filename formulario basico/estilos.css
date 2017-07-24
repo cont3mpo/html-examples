@@ -1,0 +1,46 @@
+body {
+  font-family: "Open Sans";
+}
+
+form {
+  width: 25%;
+  border: 1px solid #ccc;
+  margin: 20px;
+  padding: 20px;
+}
+
+label {
+  font-size: 14px;
+  display: block;
+}
+
+textarea {
+  resize: vertical;
+  max-height: 300px;
+  min-height: 100px;
+}
+
+input, textarea {
+  font-size: 12px;
+  margin-bottom: 20px;
+  width: 100%;
+  padding: 10px;
+  box-sizing: border-box; /* para que el padding no se pegue al borde */
+  border: 1px solid #ccc;
+}
+
+input:focus, textarea:focus {
+  border: 1px solid #1668C4;
+}
+
+input[type="submit"] {
+  margin-bottom: 0px;
+  background: #1668C4;
+  color: #fff;
+  border: none;
+}
+
+input[type="submit"]:hover {
+  background: #4A88F4;
+  cursor: pointer;
+}
