@@ -1,2 +1,2 @@
-# html-examples
+# HTML/ CSS Examples
 HTML/CSS Examples
