@@ -1,0 +1,82 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-size: 16px;
+  background: #fff;
+  font-family: "Roboto";
+}
+
+.wrap {
+  width: 90%;
+  max-width: 800px;
+  margin: 0 20px;
+/* margin: auto; */
+}
+
+.formulario h2 {
+  font-size: 16px;
+  color: #001f3f;
+  margin-bottom: 20px;
+  margin-left: 20px;
+}
+
+.formulario > div {
+  padding: 20px 0;
+  border-bottom: 1px solid #ccc;
+}
+
+.formulario input[type="radio"], .formulario input[type="checkbox"] {
+  display: none;
+}
+
+.formulario .radio label, .formulario .checkbox label {
+  color: #FF3156;
+  padding: 5px 15px 5px 51px;
+  display: inline-block;
+  position: relative;
+  font-size: 1em;
+  border-radius: 3px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.formulario .radio label:hover, .formulario .checkbox label:hover {
+  background: rgba(0,116,217,0.2);
+}
+
+.formulario .radio label:before, .formulario .checkbox label:before {
+  content: "";
+  width: 17px;
+  height: 17px;
+  display: inline-block;
+  background: none;
+  border: 3px solid #FF3156;
+  border-radius: 50%;
+  position: absolute;
+  left: 17px;
+  top: 4px;
+}
+
+/* solo para checkear cajas sin animación
+.formulario input[type="radio"]:checked + label:before, .formulario input[type="checkbox"]:checked + label:before {
+background: #0774d9;
+}
+*/
+.formulario .checkbox label:before {
+  border-radius: 3px;
+}
+
+.formulario input[type="radio"]:checked + label, .formulario input[type="checkbox"]:checked + label {
+  padding: 5px 15px;
+  background: #FF3156;
+  border-radius: 3px;
+  color: #fff;
+}
+
+.formulario input[type="radio"]:checked + label:before, .formulario input[type="checkbox"]:checked + label:before {
+  display: none;
+}
