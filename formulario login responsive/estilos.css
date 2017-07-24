@@ -1,0 +1,82 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+  font-weight: 300;
+  box-sizing: border-box;
+}
+
+body {
+  background: #DEDEDE;
+  display: flex;
+  min-height: 100vh;
+}
+
+form {
+  margin: auto;
+  width: 50%;
+  max-width: 500px;
+  background: #f3f3f3;
+  padding: 30px 50px 30px 50px;
+  border: 1px solid rgba(0,0,0,0.2);
+  border-radius: 3px;
+}
+
+h2 {
+  text-align: center;
+  margin-bottom: 20px;
+  color: rgba(0,0,0,0.5);
+}
+
+input[name="usuario"] {
+  display: block;
+  padding: 10px;
+  width: 100%;
+/*  margin: 30px 0; */
+  font-size: 18px;
+  border: 1px solid #ccc;
+  border-radius: 3px 3px 0px 0px;
+}
+
+input[name="clave"] {
+  display: block;
+  padding: 10px;
+  width: 100%;
+/*  margin: 30px 0; */
+  font-size: 18px;
+  border: 1px solid #ccc;
+  border-top: 0;
+  border-radius: 0px 0px 3px 3px;
+}
+
+input[type="submit"] {
+  background: linear-gradient(#2196F3, #3F51B5); /* boton con colores degradados */
+  border: 0;
+  color: #fff;
+  opacity: 0.9;
+  cursor: pointer;
+  border-radius: 7px;
+  margin-bottom: 0;
+  margin-top: 20px;
+  display: block;
+  padding: 10px;
+  width: 100%;
+  font-size: 20px;
+  box-shadow: 1px 1px 1px #ccc;
+  outline: 0;
+}
+
+input[type="submit"]:hover {
+  opacity: 1;
+  box-shadow: 2px 2px 2px #ccc;
+}
+
+input[type="submit"]:active {
+  transform: scale(0.95); /* escala el boton, disminuye el tamaño */
+}
+
+@media (max-width:768px) { /* Cuando llegue a los 768px que ajuste el ancho del form a 95% del total de pantalla */
+  form {
+    width: 95%;
+  }
+}
