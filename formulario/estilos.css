@@ -1,0 +1,68 @@
+form input {
+	font-family: "Helvetica Neue", Arial, sans-serif;
+	font-size: 20px;
+	font-weight: 400;
+}
+
+.formulario {
+  margin: 40px auto;
+  width: 400px;
+  padding: 30px 10px;
+  border-radius: 7px;
+  box-shadow: 0 0 5px rgba(0,0,0,.5);
+  background-color: #eee;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.formulario form input[type="text"], .formulario form input[type="email"], .formulario form input[type="password"] {
+  padding: 13px 14px;
+	border: 1px solid #bfbfbf;
+	color: #545454;
+	border-radius: 7px;
+	width: 356px;
+	margin-bottom: 21px;
+	box-sizing: border-box;
+  box-shadow: 0 0 1px rgba(0,0,0,.2);
+  display: block;
+  font-size: 18px;
+}
+
+.formulario form input[type="password"] {
+  margin-bottom: 41px;
+}
+
+.formulario form input[type="text"]:hover, .formulario form input[type="email"]:hover, .formulario form input[type="password"]:hover {
+	border-color: #68167d;
+}
+
+.formulario form input[type="text"]:focus, .formulario form input[type="email"]:focus, .formulario form input[type="password"]:focus {
+  outline: none;
+  border: 2px solid #58167d;
+  padding: 12px 13px;
+}
+
+.formulario form input[type="submit"] {
+  padding: 14px;
+	background-color: rgba(88,22,125,0.9);
+	color: #fff;
+	border-radius: 7px;
+  width: 356px;
+	cursor: pointer;
+	border-width: 0;
+  font-weight: 500;
+  box-shadow: 0 0 2px rgba(0,0,0,.3);
+}
+
+.formulario form [type="submit"]:hover {
+	background-color: rgb(88,22,125);
+  box-shadow: 0 0 3px rgba(0,0,0,0.5);
+}
+
+.formulario form [type="submit"]:focus {
+  outline: none;
+  border: 2px solid #58167d;
+  padding: 12px 12px;
+  border: 2px solid #fff;
+}
