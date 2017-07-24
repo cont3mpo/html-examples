@@ -1,0 +1,32 @@
+.contenedor {
+  width: 100px;
+  height: 100px;
+  margin: 100px auto;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.contenedor p {
+  position: relative;
+  z-index: 2;
+  color: #fff;
+}
+
+.caja {
+  width: 100px;
+  height: 100px;
+  margin: 100px auto;
+  background-color: deeppink;
+  transition: 400ms;
+  border-radius: 7px;
+}
+
+.contenedor p:hover + .caja, .caja:hover {
+  transform: scale(1.5);
+}
+.caja {
+  position: absolute;
+  top: -100px;
+}
