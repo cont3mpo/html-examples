@@ -1,0 +1,26 @@
+body {
+ min-height: 100vh;
+ display: flex;
+ align-items: center;
+ justify-content: center;
+}
+
+nav {
+  text-align: center;
+}
+
+a {
+  border-radius: 5px;
+  display: inline-block;
+  margin: 0;
+  border: 1px solid #dfe2e5;
+  padding: 10px 30px;
+  text-decoration: none;
+  background: #999;
+  color: #fff;
+}
+
+a:hover {
+  background: #ccc;
+  color: #444;
+}
