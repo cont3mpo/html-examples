@@ -1,0 +1,40 @@
+body {
+  margin: 0;
+  background: #eee;
+  display: flex;
+  min-height: 100vh;
+}
+
+.contenedor {
+  margin: auto;
+  perspective: 700px;
+  /* perspective-origin: 700px; desde donde se mira */
+}
+
+.caja {
+  width: 300px;
+  height: 300px;
+  background: crimson;
+  transition: all 10s;
+
+  transform: rotateX(0deg);
+  transform-style: preserve-3d;
+
+  /* transform: scaleZ(4) rotateX(50deg); escala en el eje Z */
+  /* transform: translate3d(50px, 50px, 50px); X Y Z */
+  /* transform: translateZ(200px); Se acerca y se aleja con negativo */
+  /* transform: rotate3d(1,0,1,50deg); X, Y, Z, rotate */
+}
+
+.cara {
+  width: 200px;
+  height: 200px;
+  background: gold;
+  margin: auto;
+
+  transform: rotateY(90deg);
+}
+
+.caja:hover {
+  transform: rotateY(960deg);
+}
