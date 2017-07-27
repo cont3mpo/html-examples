@@ -1,0 +1,112 @@
+html {
+  box-sizing: border-box;
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+body {
+  font-family: sans-serif;
+  margin: 0;
+}
+
+a {
+  color: #4e4e4e;
+  letter-spacing: 2px;
+  text-decoration: none;
+  background: rgba(0,0,0,0.1);
+  padding: 20px 5px;
+  display: inline-block;
+  width: 100%;
+  text-align: center;
+  transition: all 0.5s;
+}
+
+img {
+  height: 15px;
+}
+
+a:hover {
+  background: rgba(0,0,0,0.2);
+}
+
+.toggleNav {
+  display: none;
+}
+
+#btn-menu {
+  display: none;
+}
+
+.wrapper {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 50px;
+}
+
+/* Flex container */
+.flex-nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+
+  display: flex;
+}
+
+.flex-nav li {
+  flex: 3;
+}
+
+.flex-nav .social {
+  flex: 1;
+}
+
+
+@media all and (max-width: 1000px) {
+  .flex-nav ul {
+    flex-wrap: wrap;
+  }
+
+  .flex-nav li {
+    flex: 1 1 50%;
+  }
+
+  .flex-nav .social {
+    flex: 1 1 25%;
+  }
+}
+
+@media all and (max-width: 500px) {
+  .flex-nav li {
+    flex-basis: 100%;
+  }
+
+  /* Flex container */
+  .wrapper {
+    display: flex;
+    flex-direction: column;
+  }
+
+  /* Flex Item */
+  .wrapper > * {
+    order: 999;
+  }
+
+  .toggleNav {
+    display: block;
+    order: 1;
+  }
+
+  .flex-nav {
+    order: 2;
+  }
+
+  .flex-nav ul {
+    display: none;
+  }
+
+  #btn-menu:checked ~ .flex-nav ul {
+    display: flex;
+  }
+}
